@@ -1,0 +1,18 @@
+{
+  "name": "electron-serialport-napi",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:main": "electron src-main/index.js",
+    "start:renderer": "electron src-renderer/index.js",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^15.1.1",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "serialport": "^9.2.4"
+  }
+}

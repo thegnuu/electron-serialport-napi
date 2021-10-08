@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Serialport</h1>
+
+    <label for="port-select">Port:</label>
+    <select name="ports" id="port-select">
+      <option value="">--Choose your port--</option>
+    </select>
+
+    <button id="connect-button">Connect</button>
+
+    <textarea id="infos" rows="30" cols="70"></textarea>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
